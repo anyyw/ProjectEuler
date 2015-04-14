@@ -1,21 +1,27 @@
 /**
  * Created by Andy on 4/9/2015.
  */
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class LargestPrimeFactor {
 
-    int number;
+    private Long number;
+    private ArrayList<Long> factors;
 
-    public LargestPrimeFactor(int n) {
+    public LargestPrimeFactor(Long n) {
         this.number = n;
+        factors = new ArrayList<Long>();
     }
 
-    public int calculate() {
-        int divided = 2;
-
-        while(number % divided != 0) {
-            divided++;
+    public double calculate() {
+        for(long i = 2; i < number/2; i++) {
+            if(number % i == 0) {
+                factors.add(i);
+                factors.add(number/i);
+            }
         }
-        int calculatedNumber = number / divided;
-        return calculatedNumber;
+        Collections.sort(factors);
+        return factors.get(factors.size());
     }
 }
