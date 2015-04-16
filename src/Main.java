@@ -8,8 +8,8 @@ public class Main {
         //System.out.println(l.isPalindrome("9009"));
         //System.out.println(l.calculate());
 
-        LargestPrimeFactor lpf = new LargestPrimeFactor(600851475143L);
-        System.out.println(lpf.calculate());
+        //LargestPrimeFactor lpf = new LargestPrimeFactor(600851475143L);
+        //System.out.println(lpf.calculate());
 
     }
 }
