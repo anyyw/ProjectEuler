@@ -11,5 +11,7 @@ public class Main {
         //LargestPrimeFactor lpf = new LargestPrimeFactor(600851475143L);
         //System.out.println(lpf.calculate());
 
+        SmallestMultiple sm = new SmallestMultiple(20);
+        System.out.println(sm.calculate());
     }
 }
